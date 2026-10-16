@@ -2,11 +2,27 @@ package laboral1;
 public class Empleado extends Persona {
     private int categoria;
     public int anyos;
+
+    /**
+     *
+     * @param nombre
+     * @param dni
+     * @param sexo
+     */
     public Empleado(String nombre, String dni, char sexo) {
         super(nombre, dni, sexo);
         categoria = 1;
         anyos = 0;
     }
+
+    /**
+     *
+     * @param nombre
+     * @param dni
+     * @param sexo
+     * @param categoria
+     * @param anyos
+     */
     public Empleado(String nombre, String dni, char sexo, int categoria, int anyos) {
         super(nombre, dni, sexo);
        try {
@@ -39,7 +55,7 @@ public class Empleado extends Persona {
     }
 
     /**
-     *  incrementa anios
+     *
      * @param anios
      */
     public void incAnyos(int anios) {
@@ -55,6 +71,6 @@ public class Empleado extends Persona {
     Edad: %d
     Dni: %d
     Sexo: %S
-   """,anyos,categoria,sexo);
+    """,anyos,categoria,sexo);
     }
 }
