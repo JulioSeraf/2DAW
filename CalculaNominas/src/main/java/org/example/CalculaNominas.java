@@ -15,22 +15,24 @@ public class CalculaNominas {
         empl.imprime();
         System.out.printf("=============================\nSueldo: %d \n\n", sueldo.sueldo(empl));
     }
-    public String readText(String ruta
-    ) {
+    public StringBuilder readText(String ruta){
+        StringBuilder linea = new StringBuilder();
         String text = "";
         try(BufferedReader bf = new BufferedReader( new FileReader(ruta))){
-            text =  bf.readLine();
-            if(text == null) throw new IOException("error al leer el archivo");
+
+            while((text =  bf.readLine())!= null){
+                linea.append(text).append("\n");
+            }
 
         }catch (IOException e){
             System.out.printf("Erro ao ler texto: %s\n", e.getMessage());
         }
-        return text;
+        return linea;
     }
 
     public static void main(String[] args) {
         CalculaNominas c = new CalculaNominas();
-        String t = c.readText("empleados.txt");
+        StringBuilder t = c.readText("empleados.txt");
         System.out.print(t);
         Empleado empl1 = new Empleado("James Cosling", "32000032G", 'm', 11, 7);
         Empleado empl2 = new Empleado("Ada Lovelace", "32000031R", 'F');
