@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de participantes</title>
+</head>
+
+<body>
+    <h1>Registro de participantes</h1>
+    <section>
+     
+    <div>
+            <!--
+        novalidate desactiva la validación automática
+        al enviar. La ejecutaremos desde JavaScript
+        mediante reportValidity().
+    -->
+        <h2>Registrar</h2>
+    <form id="registro" novalidate>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required>
+
+        <button id="registrar" type="submit">Registrar</button>
+    </form>
+
+    <!-- Saludo que cambia mientras se escribe -->
+    <p id="vista"> </p>
+    <!-- Mensajes de error y confirmación -->
+    <p id="mensaje"></p>
+    <ul id="lista"></ul>
+
+    </div>
+    <div>
+         <h2>Participantes (<span id="total">0</span>)</h2>
+    <label for="buscar">Buscar participantes</label>
+    <input type="search" id="buscar" placeholder="Escribe un nombre o correo">
+    <p id="resultadoBusqueda" aria-live="polite"></p>
+    <!-- Los participantes se añadirán desde JavaScript -->
+    </div>
+    </section>
+   
+    
+   
+
+    <!--
+        type="button" evita que este botón envíe
+        el formulario.
+    -->
+    <button type="button" id="vaciar">Vaciar lista</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>

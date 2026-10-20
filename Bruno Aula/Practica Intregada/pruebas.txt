@@ -1,0 +1,47 @@
+
+PRUEBAS FUNCIONALES - REGISTRO DE PARTICIPANTES
+
+Prueba 1: Saludo dinámico
+Datos o acción: Escribir Ana, modificarlo y pegar Luis.
+Resultado esperado: El saludo se actualiza.
+Resultado obtenido: Correcto.
+
+Prueba 2: Nombre vacío
+Datos o acción: Borrar el nombre o introducir espacios.
+Resultado esperado: El saludo desaparece.
+Resultado obtenido: Correcto.
+
+Prueba 3: Formulario vacío
+Datos o acción: Pulsar Registrar sin rellenar campos.
+Resultado esperado: No se registra ningún participante.
+Resultado obtenido: Correcto.
+
+Prueba 4: Nombre demasiado corto
+Datos o acción: Nombre A y correo a@example.com.
+Resultado esperado: Mensaje "Nombre: mínimo 2 caracteres."
+Resultado obtenido: Correcto.
+
+Prueba 5: Correo incorrecto
+Datos o acción: Nombre Ana y correo ana@
+Resultado esperado: Se rechaza el correo.
+Resultado obtenido: Correcto.
+
+Prueba 6: Registro correcto
+Datos o acción: Ana y ana@example.com.
+Resultado esperado: Una fila nueva, contador 1,
+campos vacíos y foco en nombre.
+Resultado obtenido: Correcto.
+
+Prueba 7: Registro mediante Enter
+Datos o acción: Registrar Luis pulsando Enter.
+Resultado esperado: Una única fila adicional
+sin recargar la página.
+Resultado obtenido: Correcto.
+
+Prueba 8: Vaciar dos veces
+Datos o acción: Pulsar Vaciar lista dos veces.
+Resultado esperado: Lista vacía y contador 0.
+Resultado obtenido: Correecto.
+
+Comprobación adicional:
+Consola del navegador sin errores JavaScript.

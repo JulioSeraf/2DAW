@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+section{
+    display: flex;
+    gap: 10px;
+}
+section > div{
+    height: 500px;
+    width: 50%;
+    box-shadow: 0px 10px 10px black;
+    background-color:lightgray;
+}
+#vaciar , #eliminar, #editar{
+    width: 150px;
+    margin:auto 10px;
+    padding:10px 20px;
+    background-color: lightslategrey;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    color: white;
+}
+#vaciar{
+    margin: auto;
+}
+#editar{
+    background-color: rgb(174, 248, 174);
+}
+button[type="submit"]{
+    background-color: lightcyan;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px lightcyan;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+li, #resultadoBusqueda p{
+    margin: 0px 20px;
+    padding: 10px;
+    border: 1px solid;
+    background-color:cornflowerblue;
+    color: white;
+}
+li > div{
+    margin: 10px auto;
+
+}
+li > input{
+    border:none;
+    padding: 5px;
+    border-radius: 10px;
+    
+}

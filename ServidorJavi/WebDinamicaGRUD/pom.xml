@@ -8,11 +8,15 @@
     <artifactId>WebDinamicaGRUD</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- CRUCIAL: Cambiar el empaquetado a WAR para proyectos web -->
+    <packaging>war</packaging>
+
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <!-- 1. Java Servlet API -->
         <dependency>
@@ -43,5 +47,32 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin obligatorio para gestionar la generación del archivo WAR sin fallos -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <!-- Evita errores si aún no has creado el archivo web.xml -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin de Tomcat para ejecutar tu app con el comando: mvn tomcat7:run -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <!-- Ruta de acceso en el navegador (ej: http://localhost:8080/WebDinamicaGRUD) -->
+                    <path>/WebDinamicaGRUD</path>
+                    <port>8080</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

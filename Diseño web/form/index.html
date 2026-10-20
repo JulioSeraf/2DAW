@@ -1,0 +1,42 @@
+ª
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1></h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre:">
+        </div>
+        <div>
+
+            <label for="ap">Apellido:</label>
+            <input type="text" id="ap" name="ap">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="tel">Telefono:</label>
+            <input type="tel" required>
+
+        </div>
+        <div>
+            <label for="sexo">M:</label>
+            <input type="checkbox" id="sexo" name="sexo" value="m">
+            <label for="sexo">F:</label>
+            <input type="checkbox" id="sexo" name="sexo" value="f">
+        </div>
+    </form>
+
+</body>
+
+</html>

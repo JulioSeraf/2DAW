@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    width: 960px;
+    margin: auto;
+    height: 100vh;
+    border: 1px solid;
+}
+header{
+    text-align: center;
+    padding: 30px 0;
+    
+}
+aside{
+    position: absolute;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    
+}
+img{
+    width: 100%;
+}
+main{
+    position: absolute;
+    right: 0;
+    padding: 0 20px;
+    border: 1px solid;
+    height: 100%;
+    width: 700px;
+}
+section{
+    
+}
+article p {
+    display: inline-block;
+    border: 1px solid;
+    margin: auto;
+    width: 32%;
+}

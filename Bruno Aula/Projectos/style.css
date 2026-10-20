@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+section {
+    color: white;
+    animation:roun 2s alternate 0s infinite ;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px black;
+    width: 400px;
+    margin: 30px auto;
+    background-color: rgb(24, 95, 100);
+}
+@keyframes roun {
+    0%{
+        border-radius: 40px 25px 20px 15px;
+        box-shadow: 10px 10px 10px black;
+
+    }
+    25%{
+        border-radius: 15px 40px 25px 20px;
+        box-shadow: 10px 0px 10px black;
+
+    }
+    50%{
+        border-radius: 20px 15px 40px 25px;
+        box-shadow: 10px 5px 10px black;
+
+
+    }
+    100%{
+        border-radius: 25px 20px 15px 40px;
+
+    }
+}
+button{
+    animation:parp 1s ease-out 0s infinite;
+    border-radius: 10px;
+    padding:10px 15px;
+    border: none;
+    background-color: lightblue;
+}
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+    scale:1.1;
+}
+@keyframes parp {
+    0%{
+        scale:1;
+    }
+    25%{
+    }
+    50%{
+        scale: 1.1;
+
+    }
+    100%{
+        scale:1.2;
+
+    }
+}
