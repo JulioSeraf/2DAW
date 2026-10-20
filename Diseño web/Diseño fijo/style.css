@@ -8,38 +8,42 @@ body{
     position: relative;
     width: 960px;
     margin: auto;
-    height: 100vh;
-    border: 1px solid;
 }
 header{
     text-align: center;
     padding: 30px 0;
     
 }
+ul{
+    padding-left: 30px;
+}
 aside{
     position: absolute;
     left: 0;
     width: 260px;
-    height: 100%;
     
 }
 img{
-    width: 100%;
+    width: 250px;
 }
 main{
     position: absolute;
     right: 0;
     padding: 0 20px;
-    border: 1px solid;
-    height: 100%;
     width: 700px;
 }
-section{
+h2{
+    padding: 10px 0;
+}
+#comDestacado{
+    text-align: center;
     
 }
 article p {
     display: inline-block;
-    border: 1px solid;
+    text-align: justify;
+    padding: 0 5px;
     margin: auto;
-    width: 32%;
+    vertical-align: top;
+    width: 200px;
 }
