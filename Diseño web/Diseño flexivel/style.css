@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    width: 60em;
+    margin: auto;
+}
+header{
+    text-align: center;
+    padding: 1em 0;
+    
+}
+ul{
+    padding-left: 2em;
+}
+aside{
+    position: absolute;
+    left: 0;
+    width: 16em;
+    
+}
+img{
+    width: 15em;
+}
+main{
+    position: absolute;
+    right: 0;
+    padding: 0 1em;
+    width: 44em;
+}
+h2{
+    padding: 0.5em 0;
+}
+#comeDestacados{
+    text-align: center;
+}
+article p {
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width:13em;
+    padding: 0 0.3em;
+}

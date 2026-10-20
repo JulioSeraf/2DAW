@@ -170,20 +170,7 @@ formulario.addEventListener("submit", (event) => {
         filtro();
     })
     btEditar.addEventListener("click",el =>{
-        $registrar.textContent = "Guardar Cambios";
-        $registrar.style.backgroundColor = " rgb(174, 248, 174)"
-        const div = document.createElement("div");
-        const inputName = document.createElement("input","text");
-        inputName.setAttribute("placeHolder","NAME:");
-        const inputEmail = document.createElement("input","text");
-        inputEmail.setAttribute("placeHolder","EMAIL:");
-
-        const labelName = document.createElement("label");
-        const labelEmail = document.createElement("label");
-        labelName.textContent = "Nuevo valor:"
-
-        div.append(labelName,inputName,labelEmail,inputEmail);
-        participante.append(div)
+       
     })
 
     // ----------------------------------------------
