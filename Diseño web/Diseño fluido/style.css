@@ -5,13 +5,12 @@
 }
 
 body{
-    position: relative;
     width: 60%;
     margin: auto;
 }
 header{
     text-align: center;
-    padding: 1em 0;
+    padding: 1% 0;
     
 }
 ul{
@@ -19,18 +18,16 @@ ul{
     text-align: left;
 }
 aside{
-    position: absolute;
     width: 30%;
     text-align: center;
-    
+    float: left;
 }
 img{
     width: 75%;
     margin:auto;
 }
 main{
-    position: absolute;
-    right: 0;
+   float: right;
     padding: 0 1%;
     width: 70%;
 }

@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+}
+body > *{
+    border: 1px solid;
+    border-radius: 3%;
+}
+header{
+    position: relative;
+    height: 15%;
+    margin-bottom: 2.5%;
+}
+header div{
+    position: absolute;
+    width: 300px;
+    background-color: blue;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 8%;
+    top: 20%;
+}
+header button{
+    position: absolute;
+    right:0;
+    top: 5%;
+    width:10%;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: white;
+    background-color: red;
+}
+header div h1{
+    text-align: center;
+    color: white;
+}
+nav{
+    height: 10%;
+    margin-bottom: 2.5%;
+}
+aside{
+    float: left;
+    width: 35%;
+    height: 42.5%;
+    margin-right: 2.5%;
+
+}
+main{
+    float: right;
+    width: 60%;
+    height: 42.5%;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    background-color: lightblue;
+    width: 100%;
+    height: 20%;
+}
