@@ -6,41 +6,44 @@
 
 body{
     position: relative;
-    width: 80vw;
+    width: 95vw;
     height: 100vh;
     margin: auto;
+    padding: 20px 0px;
 }
 body > *{
-    border: 1px solid;
-    border-radius: 3%;
+  border: 1px solid;
+  border-radius: 5px;
 }
 header{
     position: relative;
     height: 15%;
     margin-bottom: 2.5%;
+    
 }
 header div{
     position: absolute;
-    width: 300px;
+    width: 200px;
     background-color: blue;
-    height: 40px;
-    border-radius: 10px;
+    height: 35px;
+    border-radius: 5px;
     border: 1px solid;
-    left: 8%;
+    left: 5%;
     top: 20%;
 }
 header button{
     position: absolute;
     right:0;
     top: 5%;
-    width:10%;
-    height: 25px;
-    border-radius: 20px;
+    width:13%;
+    height: 20px;
+    border-radius: 15px;
     border: 1px solid black;
     color: white;
     background-color: red;
 }
 header div h1{
+    font-size: 1.9em;
     text-align: center;
     color: white;
 }
@@ -48,22 +51,98 @@ nav{
     height: 10%;
     margin-bottom: 2.5%;
 }
+nav li{
+    display: inline-block;
+    width: 22.5%;
+    text-align: center;
+    border: 1px solid;
+    font-weight: bold;
+    
+    
+}
 aside{
     float: left;
-    width: 35%;
+    width: 30%;
     height: 42.5%;
     margin-right: 2.5%;
 
 }
+aside article{
+    padding-bottom: 10px;
+}
 main{
     float: right;
-    width: 60%;
+    width: 67.5%;
     height: 42.5%;
+    padding: 15px;
+    border: none;
+    background-color: rgb(80, 224, 80);
 }
+main section{
+    background-color: aqua;
+    height: 100%;
+    border-radius: 3px;
+
+}
+main section:first-child{
+    margin-left: 5px;
+    width: 37%;
+    float: left;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+main section:last-child{
+    padding: 10px 0;
+    width: 60%;
+    float: right;
+}
+main section:last-child h2{
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+main section:last-child p{
+    font-size: 15px;
+}
+
 footer{
     position: absolute;
-    bottom: 0%;
-    background-color: lightblue;
+    bottom: 1%;
+    transform: translate(-50%);
+    border: none;
+    left: 50%;
     width: 100%;
+    background-color: lightpink;
     height: 20%;
+}
+footer div{
+    position: absolute;
+    background-color: blue;
+    height: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: normal;
+
+    border: 1px solid black;
+
+}
+footer #divRigthF{
+    width: 25%;
+    top: 15%;
+    right: 0;
+    height: 80%;
+}
+footer #divCenterF{
+    width: 22%;
+    height: 30%;
+    top: 10%;
+    transform: translate(-55%);
+    left: 47%;
+}
+footer #divLeftF{
+    left: 3%;
+    top: 10%;
+    height: 80%;
+    width: 10%;
 }
